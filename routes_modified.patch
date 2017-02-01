@@ -1,0 +1,32 @@
+Index: resources/views/frontend/sellerSignUp/step1.blade.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- resources/views/frontend/sellerSignUp/step1.blade.php	(revision 30b02ba96b3baebc3b3f26d00ed7630f12e16f9e)
++++ resources/views/frontend/sellerSignUp/step1.blade.php	(revision )
+@@ -12,7 +12,7 @@
+         </div>
+         <div class="row">
+             <div class="col-sm-4 col-sm-offset-4">
+-                {!! Form::open(['route'=>['seller.post-sign-up.step2']]) !!}
++                {!! Form::open(['route'=>['seller.post-sign-up.step1']]) !!}
+                     <div class="form-group np3">
+                         <label class="field__label" for="first_name">First Name</label>
+                         {!! Form::text('first_name',null, ['class'=>'form-control', 'placeholder'=>'First Name']) !!}
+Index: resources/views/frontend/sellerSignUp/step2.blade.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- resources/views/frontend/sellerSignUp/step2.blade.php	(revision 30b02ba96b3baebc3b3f26d00ed7630f12e16f9e)
++++ resources/views/frontend/sellerSignUp/step2.blade.php	(revision )
+@@ -10,7 +10,7 @@
+             <br>
+             <br>
+ 
+-            {!! Form::open(['route'=>['seller.post-sign-up.step1']]) !!}
++            {!! Form::open(['route'=>['seller.post-sign-up.step2']]) !!}
+             <form>
+                 <div class="col-sm-6  col-sm-offset-3 ">
+                     <p class="s26"><span class="eb008a">1.</span> Please confirm your phone number*</p>
